@@ -1,12 +1,15 @@
+<!doctype html>
 <html>
 <head>
 
     <!--                                           -->
     <!-- Any title is fine                         -->
     <!--                                           -->
-    <title>Wrapper HTML for App</title>
+    <title>GWT/Foundation Sample Application</title>
 
-    <link type="text/css" rel="stylesheet" href="example.css">
+    <link type="text/css" rel="stylesheet" href="styles/normalize.css">
+    <link type="text/css" rel="stylesheet" href="styles/foundation.css">
+    <link type="text/css" rel="stylesheet" href="styles/example.css">
 
     <!--                                            -->
     <!-- This script is required bootstrap stuff.   -->
@@ -21,20 +24,10 @@
 <!--                                           -->
 <body>
 
-<h1>Sample Application</h1>
-
-<p>
-    This is an example of a host page for the App application.
-    You can attach a Web Toolkit module to any HTML page you like,
-    making it easy to add bits of AJAX functionality to existing pages
-    without starting from scratch.
-</p>
-
-<table align="center">
-    <tr>
-        <td id="slot1"></td>
-        <td id="slot2"></td>
-    </tr>
-</table>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="scripts/foundation.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
 </body>
 </html>
